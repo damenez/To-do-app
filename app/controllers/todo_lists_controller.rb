@@ -5,11 +5,6 @@ class TodoListsController < ApplicationController
   # GET /todo_lists
   # GET /todo_lists.json
 
-  # dmb initial current_user nil
-  # def current_user
-  #  User.first
-  # end
-  # byebug
   def index
     # @todo_lists = TodoList.all
     @todo_lists = current_user.todo_lists
